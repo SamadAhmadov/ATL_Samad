@@ -7,6 +7,7 @@ public class November14 {
 //        var a = 3;
 //        var b = 5;
 
+
 //        System.out.println("Enter any number:");
 //        Scanner mysc = new Scanner(System.in);
 //        int myNum = mysc.nextInt();
