@@ -28,6 +28,6 @@ public class Student extends Academy {
     }
 
     public void study() {
-        System.out.println("Student with ID " + studentID + " is studing " + course);
+        System.out.println("Student with ID " + studentID + " is studying " + course);
     }
 }
