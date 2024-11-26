@@ -11,4 +11,9 @@ public class Bike implements Vehicle{
     public void stopEngine() {
         System.out.println("Velosipedin mühərriki söndürüldü.");
     }
+
+    @Override
+    public String getFuelType() {
+        return "fiziki güc";
+    }
 }
