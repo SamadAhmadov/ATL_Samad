@@ -4,6 +4,8 @@ public class Academy {
 
     private String name;
     private String address;
+    private Student[] students;
+    private int studentCount;
 
     public Academy(){}
 

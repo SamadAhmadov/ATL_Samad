@@ -3,8 +3,11 @@ package Academy;
 public class Student extends Academy {
     private String studentID;
     private String course;
+    private String studentName;
 
     public Student() {}
+
+
 
     public Student(String studentID, String course) {
         this.studentID = studentID;

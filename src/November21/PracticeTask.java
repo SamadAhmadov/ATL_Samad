@@ -4,31 +4,36 @@ import java.util.Scanner;
 
 public class PracticeTask {
     public static void main(String[] args) {
+
         Scanner mySc = new Scanner(System.in);
 
-        System.out.println("Type array's length: ");
-        int firstArrLength = mySc.nextInt();
-        int [] arr= new int[firstArrLength];
-        arr = new int[] {1,2,3,4,5,6,7};
-        System.out.println("Type new array's length: ");
-        int secondArrLength = mySc.nextInt();
-        int [] newArr= new int[secondArrLength];
+        System.out.print("Type first array's length: ");
+        int firstLen = mySc.nextInt();
+        int[] firstArr = new int[firstLen];
 
-        for (int i=0; i<firstArrLength; i++){
-            newArr[i]=arr[i];
-        }
-        newArr[7]= 8;
-        newArr[8]= 9;
-        newArr[9]=10;
-
-        for (int num:arr){
-            System.out.print(num + " ");
-        }
-        System.out.println();
-
-        for (int num: newArr){
-            System.out.print(num + " ");
+        for(int i = 0; i < firstLen; i++) {
+            firstArr[i] = mySc.nextInt();
         }
 
+        System.out.print("Type second array's length: ");
+        int secondLen = mySc.nextInt();
+        int[] secondArr = new int[secondLen];
+
+        if(secondLen > firstLen) {
+            for(int i = 0; i < firstLen; i++) {
+                secondArr[i] = firstArr[i];
+            }
+            for(int i = firstLen; i < secondLen; i++) {
+                secondArr[i] = mySc.nextInt();
+            }
+        }
+        else {
+            for(int i = 0; i < secondLen; i++) {
+                secondArr[i] = firstArr[i];
+            }
+        }
+        for(int i = 0; i < secondLen; i++) {
+            System.out.print(secondArr[i] + " ");
+        }
     }
 }
