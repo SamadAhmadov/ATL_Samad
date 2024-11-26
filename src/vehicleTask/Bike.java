@@ -1,6 +1,6 @@
 package vehicleTask;
 
-public class Bike implements Vehicle{
+public class Bike implements Vehicle {
 
     @Override
     public void startEngine() {

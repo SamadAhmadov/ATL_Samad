@@ -1,6 +1,6 @@
 package vehicleTask;
 
-public class Car implements Vehicle{
+public class Car implements Vehicle {
 
     @Override
     public void startEngine() {
@@ -13,24 +13,21 @@ public class Car implements Vehicle{
     }
 
     @Override
-    public String getFuelType(){
+    public String getFuelType() {
         return "AI95";
     }
 
     boolean hasFuel = true;
 
-    public boolean checkFuel(){
+    public boolean checkFuel() {
         return hasFuel;
     }
 
-    public void startCar(){
-        if (checkFuel()){
+    public void startCar() {
+        if (checkFuel()) {
             startEngine();
-        }
-        else {
+        } else {
             System.out.println("Yanacaq bitib");
         }
     }
-
-
 }
