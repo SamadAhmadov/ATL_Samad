@@ -3,11 +3,9 @@ package InClassTasks.LibraryApp;
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Book> books;
 
-    public Library() {
-        books = new ArrayList<>();
-    }
+    private ArrayList<Book> books = new ArrayList<>();;
+
 
     public void addBook(Book book) {
         books.add(book);

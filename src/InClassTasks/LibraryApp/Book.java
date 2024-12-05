@@ -1,6 +1,7 @@
 package InClassTasks.LibraryApp;
 
 public class Book {
+
     private String title;
     private String author;
     private boolean isAvailable;
@@ -9,6 +10,10 @@ public class Book {
         this.title = title;
         this.author = author;
         this.isAvailable = true;
+    }
+
+    public boolean isAvailable() {
+        return isAvailable;
     }
 
     public String toString() {
@@ -27,9 +32,5 @@ public class Book {
             isAvailable = true;
             System.out.println(title + " the book was returned.");
         } else {}
-    }
-
-    public boolean isAvailable() {
-        return isAvailable;
     }
 }

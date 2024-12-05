@@ -5,7 +5,7 @@ public class Main {
 
         Library library = new Library();
 
-        Book book1 = new Book("Chemistry", "John Wick");
+        Book book1 = new Book("Chemistry", "Alfred Nobel");
         Book book2 = new Book("Mathematics", "Hewlett Packard");
         Book book3 = new Book("Biology", "Charles Darwin");
 
