@@ -12,25 +12,49 @@ public class Book {
         this.isAvailable = true;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public boolean isAvailable() {
         return isAvailable;
     }
 
-    public String toString() {
-        return "Book title: " + title + ", author: " + author + ", status: " + (isAvailable ? "is available." : "is not available.");
+    public void setAvailable(boolean available) {
+        isAvailable = available;
     }
 
-    public void rent() {
+    public void rentBook() throws BookAlreadyRentedException {
         if (isAvailable) {
             isAvailable = false;
-            System.out.println(title + " the book was rented.");
-        } else {}
+            System.out.println(title + " the book has rented.");
+        } else {
+            throw new BookAlreadyRentedException(title + " the book is on loan.");
+        }
     }
 
     public void returnBook() {
         if (!isAvailable) {
             isAvailable = true;
             System.out.println(title + " the book was returned.");
-        } else {}
+        } else {
+        }
+    }
+    public String toString() {
+        return "Book title: " + title +
+                ", author: " + author +
+                ", status: " + (isAvailable ? "is available." : "is not available.");
     }
 }

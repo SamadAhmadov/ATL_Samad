@@ -4,22 +4,21 @@ import java.util.ArrayList;
 
 public class Library {
 
-    private ArrayList<Book> books = new ArrayList<>();;
-
+    private ArrayList<Book> books = new ArrayList<>();
 
     public void addBook(Book book) {
         books.add(book);
         System.out.println(book.toString() + " the book was added.");
     }
 
-    public void rentBook(String title) {
+    public void rentBook(String title) throws BookNotFoundException, BookAlreadyRentedException {
         for (Book book : books) {
-            if (book.toString().contains(title)) {
-                book.rent();
+            if (book.getTitle().equalsIgnoreCase(title)) {
+                book.rentBook();
                 return;
             }
         }
-        System.out.println(title + " was not found.");
+        System.out.println(title + " was not found in library.");
     }
 
     public void returnBook(String title) {
@@ -33,15 +32,12 @@ public class Library {
     }
 
     public void showAvailableBooks() {
-        boolean anyAvailable = false;
+        System.out.println("\nAvailable books: ");
         for (Book book : books) {
             if (book.isAvailable()) {
-                System.out.println(book.toString());
-                anyAvailable = true;
+                System.out.println(book);
             }
         }
-        if (!anyAvailable) {
-            System.out.println("No available books.");
+
         }
-    }
 }

@@ -18,9 +18,10 @@ public class Main {
 
         library.rentBook("Chemistry");
         library.rentBook("Mathematics");
-        System.out.println("\nAvailable books (after rent):");
+        System.out.println("\nAvailable books (after rentBook):");
         library.showAvailableBooks();
 
+        library.rentBook("Chemistry");
 
         library.returnBook("Chemistry");
         System.out.println("\nAvailable books (after return):");
