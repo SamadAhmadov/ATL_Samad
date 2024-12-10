@@ -12,9 +12,7 @@ public class Main {
             studentDatabase.addStudent(new Student("Emin", 4));
             studentDatabase.addStudent(new Student("Musa", 5));
             studentDatabase.addStudent(new Student("Huseyn", 6));
-
             studentDatabase.addStudent(new Student("Tofiq", 3));
-
         } catch (DuplicateStudentException e) {
             System.out.println(e.getMessage());
         }

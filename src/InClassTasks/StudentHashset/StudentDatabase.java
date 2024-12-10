@@ -6,7 +6,7 @@ public class StudentDatabase {
     private HashSet<Student> students;
 
     public StudentDatabase() {
-        students = new HashSet<>();
+        this.students = new HashSet<>();
     }
 
     public void addStudent(Student student) throws DuplicateStudentException {
