@@ -1,4 +1,4 @@
-package newPackage;
+package Calculator;
 
 public class Toplama {
     public int Toplama (int a, int b){

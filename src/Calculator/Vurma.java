@@ -1,4 +1,4 @@
-package newPackage;
+package Calculator;
 
 public class Vurma {
     public int Vurma (int a, int b){

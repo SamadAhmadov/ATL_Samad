@@ -1,4 +1,4 @@
-package InClassTasks.MapTask;
+package InClassTasks.StudentHashMapTask;
 
 class Student {
     private int id;

@@ -1,4 +1,4 @@
-package InClassTasks.StudentHashset;
+package InClassTasks.StudentHashSetTask;
 
 public class Student {
     private String name;

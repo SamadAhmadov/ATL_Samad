@@ -1,4 +1,4 @@
-package newPackage;
+package Calculator;
 
 public class Bolme {
     public int Bolme(int a, int b){

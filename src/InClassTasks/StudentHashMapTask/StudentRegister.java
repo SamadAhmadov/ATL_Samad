@@ -1,4 +1,4 @@
-package InClassTasks.MapTask;
+package InClassTasks.StudentHashMapTask;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package newPackage;
+package Calculator;
 
 public class Cixma {
     public int Cixma (int a, int b){

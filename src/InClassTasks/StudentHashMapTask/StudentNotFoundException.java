@@ -1,4 +1,4 @@
-package InClassTasks.MapTask;
+package InClassTasks.StudentHashMapTask;
 
 public class StudentNotFoundException extends RuntimeException {
     public StudentNotFoundException(String message) {

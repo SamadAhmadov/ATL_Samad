@@ -1,4 +1,4 @@
-package InClassTasks.StudentHashset;
+package InClassTasks.StudentHashSetTask;
 
 import java.util.HashSet;
 
