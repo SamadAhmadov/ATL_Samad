@@ -22,13 +22,18 @@ public class Main {
 
         agency.displayTour();
 
-//        agency.addCustomer(new Customer(1, "Samad", Arrays.asList(tour1,tour2)));
+//      agency.addCustomer(new Customer(1, "Samad", Arrays.asList(tour1)));
         Customer customer1 = new Customer(1, "Samad", List.of(tour1));
+        Customer customer2 = new Customer(2, "Tofiq", List.of(tour2,tour3));
+        Customer customer3 = new Customer(3, "Kanan", List.of(tour4));
+
+        customer1.reserveTour(tour1);
+        customer2.reserveTour(tour2);
+        customer3.reserveTour(tour4);
 
         agency.addCustomer(customer1);
-
-        customer1.displayCustomer();
-        agency.displayTour();
+        agency.addCustomer(customer2);
+        agency.addCustomer(customer3);
         agency.displayCustomer();
         tour1.reserveTour();
         tour1.cancelReservation();

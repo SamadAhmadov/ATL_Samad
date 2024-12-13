@@ -75,7 +75,7 @@ public class Tour {
     }
 
     public void reserveTour() {
-        if (!isReserved) {
+        if (isReserved) {
             System.out.println("Tour has already reserved");
         } else {
             isReserved = true;
@@ -84,10 +84,9 @@ public class Tour {
     }
 
     public void cancelReservation() {
-        if (isReserved) {
+        if (!isReserved) {
             System.out.println("Tour is not reserved");
         } else {
-            isReserved = true;
             System.out.println(getTourName() + " tour cancellation is done");
         }
     }

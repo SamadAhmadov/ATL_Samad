@@ -1,16 +1,17 @@
 package InClassTasks.TravelApp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
     private int customerId;
     private String customerName;
-    private List<Tour> reserveTours;
+    private List<Tour> reservedTours;
 
     public Customer(int customerId, String customerName, List<Tour> reserveTours) {
         this.customerId = customerId;
         this.customerName = customerName;
-        this.reserveTours = reserveTours;
+        this.reservedTours = new ArrayList<>();
     }
 
     public int getCustomerId() {
@@ -30,37 +31,37 @@ public class Customer {
     }
 
     public List<Tour> getReserveTours() {
-        return reserveTours;
+        return reservedTours;
     }
 
     public void setReserveTours(List<Tour> reserveTours) {
-        this.reserveTours = reserveTours;
+        this.reservedTours = reserveTours;
     }
 
     public void reserveTour(Tour tour) {
         if(!tour.isReserved()){
             tour.reserveTour();
-            reserveTours.add(tour);
-            System.out.println("Tur" + tour.getTourName() + " paket sizin siyahınıza əlavə olundu");
+            reservedTours.add(tour);
+            System.out.println("Tur " + tour.getTourName() + " paket sizin siyahınıza əlavə olundu.");
         }else {
-            System.out.println("Tur paketi artıq rezerv olunub");
+            System.out.println("Tur paketi artıq rezerv olunub.");
         }
     }
 
     public void cancelReserve(Tour tour){
-        if (reserveTours.contains(tour)){
+        if (reservedTours.contains(tour)){
             tour.cancelReservation();
-            reserveTours.remove(tour);
-            System.out.println("Tur" + tour.getTourName() + "siyahınızdan silindi");
+            reservedTours.remove(tour);
+            System.out.println("Tur " + tour.getTourName() + " siyahınızdan silindi.");
         }else {
-            System.out.println("Rezerv atrıq ləğv olunub");
+            System.out.println("Rezerv atrıq ləğv olunub.");
         }
     }
 
     public void displayCustomer (){
         System.out.println("Customer name: " + customerName +
                 ", customer ID: " + customerId +
-                ", reserved tours" + reserveTours);
+                ", reserved tours" + reservedTours);
     }
 
     @Override
@@ -68,7 +69,7 @@ public class Customer {
         return "Customer{" +
                 "customerId=" + customerId +
                 ", customerName='" + customerName + '\'' +
-                ", reserveTours=" + reserveTours +
+                ", reserveTours=" + reservedTours +
                 '}';
     }
 }
