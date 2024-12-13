@@ -1,4 +1,4 @@
-package November21;
+package InClassTasks;
 
 public class ResizeArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-public class Room {
+public abstract class Room {
     private int roomNumber;
     private double price;
     private boolean isBooked;

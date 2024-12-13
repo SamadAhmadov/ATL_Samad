@@ -1,4 +1,4 @@
-package November21;
+package InClassTasks;
 
 import java.util.Scanner;
 

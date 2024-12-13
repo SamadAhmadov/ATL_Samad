@@ -1,4 +1,4 @@
-package StudentRegistration;
+package InClassTasks.StudentRegistration;
 
 import java.time.LocalDate;
 import java.time.Period;

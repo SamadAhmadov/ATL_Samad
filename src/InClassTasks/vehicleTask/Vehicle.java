@@ -1,4 +1,4 @@
-package vehicleTask;
+package InClassTasks.vehicleTask;
 
 public interface Vehicle {
     void startEngine();
