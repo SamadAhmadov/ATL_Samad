@@ -1,4 +1,4 @@
-package InClassTasks.FunctionalIntrface;
+package InClassTasks.FunctionalInterface;
 
 public class LambdaExpression {
     public static void main(String[] args) {
